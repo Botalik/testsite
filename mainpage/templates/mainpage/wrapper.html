@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рулеееточка</title>
+       {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body style="background: silver">
+ <div class="jumbotron">
+     <div class="container">
+        <p>
+         {% block content %}
+         {% endblock %}
+        </p>
+         <p>
+             <a href="/" class="btn btn-success btn-lg">Главная страница</a>
+<!--             <a href="/news" class="btn btn-primary btn-lg">Узнать больше</a>-->
+             <a href="/contacts/" class="btn btn-info btn-lg">Узнать больше</a>
+
+         </p>
+     </div>
+ </div>
+
+</body>
+</html>
